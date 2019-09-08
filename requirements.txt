@@ -5,4 +5,4 @@ Flask-SQLAlchemy
 Flask-WTF
 Werkzeug
 WTForms
-uwsgi
+gunicorn
