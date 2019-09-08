@@ -5,6 +5,7 @@ Searched Item
 {% block styles %}
 {{super()}}
 <link rel="stylesheet" href="{{url_for('.static', filename='item.css')}}">
+<link rel="icon" href="{{url_for('.static', filename='favicon.ico')}}">
 {% endblock %}
 {% block content %}
 <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -12,7 +13,6 @@ Searched Item
       <div class="navbar-header">
          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
          <span class="sr-only">Toggle navigation</span>
-         <span class="icon-bar"></span>
          <span class="icon-bar"></span>
          <span class="icon-bar"></span>
          </button>
@@ -28,13 +28,16 @@ Searched Item
 <h1 class="page-header">Welcome, {{ name }}</h1>
 <br>
 <br>
-<table class="table table-striped">
-   <tr>
+<table class="table table-hover">
+	<thead>
+   <tr class="bg-primary">
       <th>name</th>
       <th>price</th>
       <th></th>
       <th></th>
    </tr>
+	</thead>
+	<tbody>
    <tr>
       <td>{{item.name}}</td>
       <td>{{item.price}}</td>
@@ -48,5 +51,6 @@ Searched Item
          </form>
       </td>
    </tr>
+	</tbody>
 </table>
 {% endblock %}

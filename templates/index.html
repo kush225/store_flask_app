@@ -5,6 +5,7 @@ Store Home
 {% block styles %}
 {{super()}}
 <link rel="stylesheet" href="{{url_for('.static', filename='starter-template.css')}}">
+<link rel="icon" href="{{url_for('.static', filename='favicon.ico')}}">
 {% endblock %}
 {% block content %}
 <nav class="navbar navbar-inverse navbar-fixed-top">

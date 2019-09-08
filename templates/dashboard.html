@@ -5,6 +5,7 @@ Dashboard
 {% block styles %}
 {{super()}}
 <link rel="stylesheet" href="{{url_for('.static', filename='dashboard.css')}}">
+<link rel="icon" href="{{url_for('.static', filename='favicon.ico')}}">
 {% endblock %}
 {% block content %}
 <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -12,7 +13,6 @@ Dashboard
       <div class="navbar-header">
          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
          <span class="sr-only">Toggle navigation</span>
-         <span class="icon-bar"></span>
          <span class="icon-bar"></span>
          <span class="icon-bar"></span>
          </button>
@@ -30,15 +30,21 @@ Dashboard
 <h1 class="page-header">Welcome, {{ name }}</h1>
 <br>
 <br>
-<a class="btn btn-success" href="/add_item"> Add Item</a>
-<table class="table table-striped">
+<a class="btn btn-success btn-lg" href="/add_item"> Add Item</a>
+<table class="table table-hover">
+	<thead>
    <tr>
-      <th>Name of the Items</th>
+      <th class="bg-primary">Name of the Items</th>
    </tr>
+	</thead>
+	<tbody>
+	   <ul>
    {% for item in items %}
    <tr>
-      <td><a href="/item/{{item.name}}">{{item.name}}</a></td>
+	   <td><li><a href="/item/{{item.name}}">{{item.name}}</a></li></td>
    </tr>
    {% endfor %}
+	   </ul>
+	</tbody>
 </table>
 {% endblock %}
