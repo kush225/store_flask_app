@@ -1,0 +1,11 @@
+body {
+  padding-top: 50px;
+}
+
+.navbar-fixed-top {
+  border: 0;
+}
+
+.main .page-header {
+  margin-top: 0;
+}
