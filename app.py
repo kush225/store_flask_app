@@ -8,7 +8,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user, current_user
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'kush225'
+app.config['SECRET_KEY'] = 'abcd1234'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
 bootstrap = Bootstrap(app)
 db = SQLAlchemy(app)
