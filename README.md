@@ -1,6 +1,6 @@
 # Flask App - Store
 
-A Web Application made using python-flask that does CRUD operations, stores the data in sqlite database.
+A Simple Web Application made using python-flask that does CRUD operations, and stores the data in sqlite database.
 
 ## More about CRUD
 The acronym CRUD stands for create, read, update and delete. These are the four basic functions of persistent storage.
@@ -10,13 +10,11 @@ The acronym CRUD stands for create, read, update and delete. These are the four 
 * DELETE procedures: Deletes a specified row in the WHERE clause.
 
 ## Requirements
-============
 
 The python dependencies are managed using pip and listed in
 `requirements.txt`
 
 ## Setting up Local Development
-============================
 
 First, clone this repository:
 
@@ -38,5 +36,5 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Please make sure to update tests as appropriate.
 
-## HEROKU LINK
+## APP LINK
 [HEROKU](https://store-flask-app.herokuapp.com/)
